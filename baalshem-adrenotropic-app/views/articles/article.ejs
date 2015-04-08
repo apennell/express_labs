@@ -2,13 +2,25 @@
 <!DOCTYPE HTML>
 <html>
 <body>
-<h1>Article: <%= articleToDisplay.title %></h1>
+<h1><i>Daily Planet</i></h1>
+<br>
+<h1><%= articleToDisplay.title %></h1>
 <div>
-  <ul>
-  	<li>Author: <%= articleToDisplay.Author.first_name  %> <%= articleToDisplay.Author.last_name  %></li>
-  	<li>Content: <%= articleToDisplay.content  %></li>
-  </ul>
+  <p><strong>By <%= articleToDisplay.Author.first_name  %> <%= articleToDisplay.Author.last_name  %></strong><p>
+  <p><%= articleToDisplay.content  %></p>
 </div>
+<br><br><br>
+	<a href="/">Home</a>
+	<br>
+	<a href="/articles">News</a>
+	<br>
+	<a href="/authors">Reporters</a>
+	<br>
+	<a href="/users/login">Log In</a>
+	<br>
+	<a href="/about">About</a>
+	<br>
+	<a href="/contact">Contact</a>
 </body>
 </html>
 
